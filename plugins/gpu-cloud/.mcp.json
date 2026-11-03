@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "center-ai-vision": {
+      "type": "http",
+      "url": "https://console.centeraivision.com/mcp"
+    }
+  }
+}

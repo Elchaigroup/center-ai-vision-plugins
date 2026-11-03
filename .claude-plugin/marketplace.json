@@ -1,0 +1,18 @@
+{
+  "name": "center-ai-vision",
+  "description": "Center AI Vision plugins for Claude Code",
+  "owner": {
+    "name": "Center AI Vision",
+    "email": "info@centeraivision.com"
+  },
+  "metadata": {
+    "description": "Center AI Vision plugins for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "gpu-cloud",
+      "source": "./plugins/gpu-cloud",
+      "description": "Rent data-centre GPUs by the hour from Claude Code: price, start, connect to and stop them, within a spending limit you set."
+    }
+  ]
+}

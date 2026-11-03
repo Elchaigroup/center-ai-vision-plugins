@@ -1,0 +1,14 @@
+{
+  "name": "gpu-cloud",
+  "version": "1.0.0",
+  "description": "Rent data-centre GPUs by the hour from Claude Code: price, start, connect to and stop them, within a spending limit you set.",
+  "author": {
+    "name": "Center AI Vision",
+    "email": "info@centeraivision.com",
+    "url": "https://console.centeraivision.com"
+  },
+  "homepage": "https://console.centeraivision.com/claude",
+  "repository": "https://github.com/Elchaigroup/center-ai-vision-plugins",
+  "license": "MIT",
+  "keywords": ["gpu", "cloud", "mcp", "a100", "h100", "jupyter", "vllm"]
+}
