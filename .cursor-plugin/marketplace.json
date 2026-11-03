@@ -1,0 +1,11 @@
+{
+  "name": "center-ai-vision",
+  "owner": { "name": "Center AI Vision", "email": "info@centeraivision.com" },
+  "plugins": [
+    {
+      "name": "gpu-cloud",
+      "source": "plugins/gpu-cloud",
+      "description": "Rent data-centre GPUs by the hour from Cursor: price, start, connect to and stop them, within a spending limit you set."
+    }
+  ]
+}

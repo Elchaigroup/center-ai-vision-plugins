@@ -17,7 +17,11 @@ Without the plugin:
 claude mcp add --transport http center-ai-vision https://console.centeraivision.com/mcp
 ```
 
-## Cursor, Codex, Claude Desktop and other MCP clients
+## Cursor
+
+Install **gpu-cloud** from the Cursor marketplace, or add the server from https://console.centeraivision.com/claude (Add to Cursor), then sign in when Cursor asks.
+
+## Codex, Claude Desktop and other MCP clients
 
 Server address (Streamable HTTP): `https://console.centeraivision.com/mcp`. It signs in with OAuth, or takes an API key as `Authorization: Bearer cav_live_…`.
 
@@ -33,7 +37,8 @@ For agents that run unattended, create an API key in the console under Settings 
 
 ## What's inside
 
-- `plugins/gpu-cloud/.mcp.json`: the remote MCP server.
-- `plugins/gpu-cloud/skills/rent-gpu`: how to rent a GPU safely: check the account, quote, ask before starting, copy results off, stop.
+- `plugins/gpu-cloud/.mcp.json` (Claude Code) and `plugins/gpu-cloud/mcp.json` (Cursor): the remote MCP server.
+- `.claude-plugin/` and `.cursor-plugin/`: the marketplace and plugin manifests for each.
+- `plugins/gpu-cloud/skills/rent-gpu`: how to rent a GPU safely: check the account, quote, ask before starting, wait for it, copy results off, stop.
 
 Questions: info@centeraivision.com
