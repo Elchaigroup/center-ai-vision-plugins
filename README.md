@@ -19,13 +19,13 @@ claude mcp add --transport http center-ai-vision https://console.centeraivision.
 
 ## Cursor
 
-Install **gpu-cloud** from the Cursor marketplace, or add the server from https://console.centeraivision.com/claude (Add to Cursor), then sign in when Cursor asks.
+Install **gpu-cloud** from the Cursor marketplace, or add the server from https://console.centeraivision.com/agents (Add to Cursor), then sign in when Cursor asks.
 
 ## Codex, Claude Desktop and other MCP clients
 
 Server address (Streamable HTTP): `https://console.centeraivision.com/mcp`. It signs in with OAuth, or takes an API key as `Authorization: Bearer cav_live_…`.
 
-Setup for each client: https://console.centeraivision.com/claude
+Setup for each client: https://console.centeraivision.com/agents
 
 ## Spending limits
 
