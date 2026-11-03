@@ -18,5 +18,6 @@
     "h100",
     "jupyter",
     "vllm"
-  ]
+  ],
+  "privacyPolicyUrl": "https://console.centeraivision.com/privacy"
 }
