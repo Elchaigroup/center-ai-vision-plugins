@@ -35,6 +35,39 @@ For agents that run unattended, create an API key in the console under Settings 
 
 `https://console.centeraivision.com/mcp/public` lists GPUs, setups and estimated prices with no sign-in.
 
+## Pricing feed
+
+`GET https://console.centeraivision.com/api/v1/gpus` returns every GPU we offer with its live on-demand price and availability. It is public (no key), JSON, and refreshed every 60 seconds.
+
+```json
+[
+  {
+    "id": "a100-80gi-pcie",
+    "name": "NVIDIA A100",
+    "family": "PCIe · Ampere",
+    "consumer": false,
+    "specs": [["Memory", "80 GB HBM2e"], ["Bandwidth", "1.94 TB/s"]],
+    "ratePerHour": 176,
+    "available": 5,
+    "rentable": true,
+    "total": 12
+  }
+]
+```
+
+| Field | Meaning |
+|---|---|
+| `id` | Stable GPU id: model, memory and interface |
+| `name`, `family` | Display name; interface and architecture |
+| `consumer` | `true` for consumer cards (RTX 30/40/50 series) |
+| `specs` | Label and value pairs, memory first |
+| `ratePerHour` | On-demand price for one GPU, in **US cents per hour**, before 5% UAE VAT on top-ups. Billed by the minute |
+| `available` | GPUs free to start right now |
+| `rentable` | `true` when enough are free to start one reliably; only these can be ordered |
+| `total` | GPUs of this model in the pool |
+
+One GPU per machine, 1–47 hours per order, prepaid; unused minutes return to the balance.
+
 ## What's inside
 
 - `plugins/gpu-cloud/.mcp.json` (Claude Code) and `plugins/gpu-cloud/mcp.json` (Cursor): the remote MCP server.
