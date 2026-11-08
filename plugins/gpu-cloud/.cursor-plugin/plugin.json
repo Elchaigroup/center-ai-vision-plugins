@@ -1,6 +1,6 @@
 {
   "name": "gpu-cloud",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Rent data-centre GPUs by the hour from Cursor: price, start, connect to and stop them, within a spending limit you set.",
   "author": { "name": "Center AI Vision", "email": "info@centeraivision.com" },
   "homepage": "https://console.centeraivision.com/agents",
